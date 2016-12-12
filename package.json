@@ -12,5 +12,8 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/MadMed677/denis-simple-nodejs#readme"
+  "homepage": "https://bitbucket.org/MadMed677/denis-simple-nodejs#readme",
+  "dependencies": {
+    "express": "4.14.0"
+  }
 }
