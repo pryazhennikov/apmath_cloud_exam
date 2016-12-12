@@ -1,6 +1,6 @@
 {
   "name": "denis-simple-nodejs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/MadMed677/denis-simple-nodejs.git"
   },
-  "author": "",
+  "author": "MadMed677",
   "license": "ISC",
   "homepage": "https://bitbucket.org/MadMed677/denis-simple-nodejs#readme",
   "dependencies": {
