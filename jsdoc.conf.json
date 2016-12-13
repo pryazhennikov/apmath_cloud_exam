@@ -1,0 +1,22 @@
+{
+  "tags": {
+	"allowUnknownTags": true,
+	"dictionaries": ["jsdoc","closure"]
+  },
+  "source": {
+	"include": [ "./src/js" ],
+	"exclude": [ "documentation", "node_modules" ],
+	"includePattern": ".+\\.js(doc)?$",
+	"excludePattern": "(^|\\/|\\\\)_|.+[Ss]pec\\.js"
+  },
+  "templates": {
+	"cleverLinks": false,
+	"monospaceLinks": false
+  },
+  "opts": {
+	"destination": "./documentation/",
+	"readme": "./README.md",
+	"recurse": true,
+	"verbose": true
+  }
+}

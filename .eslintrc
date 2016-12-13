@@ -1,0 +1,106 @@
+/* eslint-disable */
+{
+  "extends": "airbnb",
+
+  "globals": {
+	"document": false,
+	"navigator": false,
+	"window": false,
+	"describe": true,
+	"xdescribe": false,
+	"ddescribe": false,
+	"before": false,
+	"after": false,
+	"beforeEach": false,
+	"afterEach": false,
+	"it": false,
+	"xit": false,
+	"iit": false,
+	"expect": false,
+	"spyOn": false,
+	"sinon": false,
+	"require": false,
+	"CustomEvent": false
+  },
+
+  "installedESLint": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+	"ecmaVersion": 6,
+	"ecmaFeatures": {
+	  "experimentalObjectRestSpread": true
+	},
+	"sourceType": "module"
+  },
+
+  "plugins": [
+	"react"
+  ],
+
+  "env": {
+	"es6": true,
+	"node": true
+  },
+
+  "rules": {
+	"no-multiple-empty-lines": "error",
+	"no-multi-spaces": ["error", {
+	  "exceptions": {
+		"ImportDeclaration": true
+	  }
+	}],
+	"no-lonely-if": "error",
+	"no-trailing-spaces": "error",
+	"require-jsdoc": ["error", {
+	  "require": {
+		"FunctionDeclaration": true,
+		"MethodDefinition": true,
+		"ClassDeclaration": true
+	  }
+	}],
+
+	"space-in-parens": ["warn", "never"],
+	"no-underscore-dangle": ["error", {
+	  "allowAfterThis": true,
+	  "allowAfterSuper": true
+	}],
+
+	"valid-jsdoc": [2, { "requireReturn": false, "requireReturnDescription": false }],
+	"valid-typeof": 2,
+	"wrap-iife": [2, "any"],
+
+	"indent": ["error", 4],
+	"global-require": "warn",
+	"comma-dangle": ["error", "never"],
+
+	// Class Rules
+	"class-methods-use-this": [0],
+
+	// Parents Rules
+	"arrow-parens": [2, "as-needed"],
+	"no-confusing-arrow": 0,
+
+	// Object Rules
+	"object-shorthand": ["error", "methods"],
+
+	// String Rules
+	"max-len": ["error", 150],
+
+	// Numbers Rules
+	"space-infix-ops": ["warn", {"int32Hint": false}],
+
+	// Import Rules
+	"import/no-named-as-default": 0,
+	"import/no-extraneous-dependencies": [0],
+	"import/no-unresolved": [0],
+
+	// React Rules
+	"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+	"react/jsx-curly-spacing": [1, "always"],
+	"react/forbid-prop-types": [2, { "forbid": ["any"] }],
+	"react/prefer-stateless-function": [0],
+	"react/jsx-indent": [2, 4],
+	"react/jsx-indent-props": [2, 4],
+	"react/jsx-boolean-value": [2, "always"]
+  }
+}
